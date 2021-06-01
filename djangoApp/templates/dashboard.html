@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}Tableau de bord{% endblock %}
+
+{% block body %}
+    <h1>Tableau de bord</h1>
+
+    <h2>Backlogs</h2>
+    <ul>
+        {% for backlog in backlogs %}
+            <li><a href="{% url 'backlog' backlog.id %}">{{ backlog.name }}</a></li>
+        {% endfor %}
+    </ul>
+
+    <h2>Équipes</h2>
+    <ul>
+        {% for team in teams %}
+            <li>{{ team.name }} ({% for member in team.members.all %}{{ member.username }}{% if not forloop.last %}, {% endif %}{% endfor %})</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

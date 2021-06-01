@@ -1,0 +1,187 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="{% static 'img/logo.png' %}" >
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />  
+    <link rel="stylesheet" type="text/css" href="{% static 'homestyle.css' %}" /> 
+    <link rel="stylesheet" href="{% static 'css/font-awesome/css/font-awesome.min.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+    <style>
+    
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg  ">
+        <div class="container-fluid">
+
+                <a class="nav-link " aria-current="page" href="{% url 'home' %}"><img src="{% static 'img/logo.png' %}"  id="logo"></a>
+             
+          <a class="navbar-brand" href="{% url 'home' %}">DataVision</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'liste' %}">List</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'statistique'  %}">Statistique</a>
+              </li>
+            
+             
+                
+          
+            
+    
+            </ul>
+           
+          </div>
+        </div>
+      </nav>
+      <div id="im"></div>
+      <div class="resume-wrapper">
+        <section class="profile section-padding">
+          <div class="container">
+            <div class="picture-resume-wrapper">
+              <div class="picture-resume">
+              <span><img src="{% static 'img/logo.png' %}" alt="" /></span>
+        
+        <defs>
+          <filter id="goo">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur" />
+            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 21 -9" result="cm" />
+          </filter>
+        </defs>
+        
+        
+      <g filter="url(#goo)" >  
+        
+        <circle id="main_circle" class="st0" cx="171.5" cy="175.6" r="130"/>
+        
+        <circle id="circle" class="bubble0 st1" cx="171.5" cy="175.6" r="122.7"/>
+        <circle id="circle" class="bubble1 st1" cx="171.5" cy="175.6" r="122.7"/>
+        <circle id="circle" class="bubble2 st1" cx="171.5" cy="175.6" r="122.7"/>
+        <circle id="circle" class="bubble3 st1" cx="171.5" cy="175.6" r="122.7"/>
+        <circle id="circle" class="bubble4 st1" cx="171.5" cy="175.6" r="122.7"/>
+        <circle id="circle" class="bubble5 st1" cx="171.5" cy="175.6" r="122.7"/>
+        <circle id="circle" class="bubble6 st1" cx="171.5" cy="175.6" r="122.7"/>
+        <circle id="circle" class="bubble7 st1" cx="171.5" cy="175.6" r="122.7"/>
+        <circle id="circle" class="bubble8 st1" cx="171.5" cy="175.6" r="122.7"/>
+        <circle id="circle" class="bubble9 st1" cx="171.5" cy="175.6" r="122.7"/>
+        <circle id="circle" class="bubble10 st1" cx="171.5" cy="175.6" r="122.7"/>
+      
+      </g>  
+      </svg>
+            </div>
+               <div class="clearfix"></div>
+       </div>
+            <div class="name-wrapper">
+              <h1>Company <br/>DataVision</h1><!-- YOUR NAME AND LAST NAME  -->
+            </div>
+            <div class="clearfix"></div>
+            <div class="contact-info clearfix">
+              <ul class="list-titles">
+                <li>Call</li>
+                <li>Mail</li>
+                <li>Web</li>
+                <li>Home</li>
+              </ul>
+              <ul class="list-content ">
+                <li>+21696500950</li> <!-- YOUR PHONE NUMBER  -->
+                <li>skanderamor@gmail.com</li> <!-- YOUR EMAIL -->
+                <li><a href="#">http://www.datavision.company</a></li> <!-- YOUR WEBSITE  -->
+                <li> Tunisie - Ariana
+                  D36 résidence yasmine al andalous</li> <!-- YOUR STATE AND COUNTRY  -->
+              </ul>
+            </div>
+            <div class="contact-presentation"> <!-- YOUR PRESENTATION RESUME  -->
+              <p><span class="bold">Datavision</span>  is a multi Platform solution with a plug and play hardware box and a web Platform. </p>
+            </div>
+            <div class="contact-social clearfix">
+              <ul class="list-titles">
+                <li>LinkedIn</li>
+                <li>Facebook</li>
+              </ul>
+              <ul class="list-content"> <!-- REMEMBER TO PUT THE URL ON THE HREF TAG  -->
+                <li><a href="">https://www.linkedin.com/company/datavisioncompany</a></li> <!-- YOUR TWITTER USER  -->
+                <li><a href="">https://www.facebook.com/datavision.company/</a></li> <!-- YOUR DRIBBBLE USER  -->
+                
+              </ul>
+            </div>
+          </div>
+        </section>
+        
+        <section class="experience section-padding">
+          <div class="container">
+            <h3 class="experience-title">Experience</h3>
+            
+            <div class="experience-wrapper">
+              <div class="company-wrapper clearfix">
+                <div class="experience-title">Business developer</div> <!-- NAME OF THE COMPANY YOUWORK WITH  -->
+                <div class="time">Communication - Marketing</div> <!-- THE TIME YOU WORK WITH THE COMPANY  -->
+              </div>
+              
+              <div class="job-wrapper clearfix">
+                <div class="experience-title">Full stack web developer</div> <!-- JOB TITLE  -->
+                <div class="company-description">
+                  <p>Node.js - Angular - MongoDB - Linux - Git</p>  <!-- JOB DESCRIPTION  -->
+                </div>
+              </div>
+              
+              <div class="company-wrapper clearfix">
+                <div class="experience-title">Data scientist</div> <!-- NAME OF THE COMPANY YOUWORK WITH  -->
+                <div class="time">DataSience - DataBig - Python</div> <!-- THE TIME YOU WORK WITH THE COMPANY  -->
+              </div>
+              
+               <div class="job-wrapper clearfix">
+                <div class="experience-title">ARTIFICIAL INTELLIGENCE ENGINEER</div> <!-- JOB TITLE  -->
+                <div class="company-description">
+                  <p>C/C++ - Ai - Python</p>  <!-- JOB DESCRIPTION  -->
+                </div>
+              </div>
+              
+              <div class="company-wrapper clearfix">
+                <div class="experience-title">Business Intelligence Analyst</div> <!-- NAME OF THE COMPANY YOUWORK WITH  -->
+                <div class="time">Nov 2009 - Nov 2010</div> <!-- THE TIME YOU WORK WITH THE COMPANY  -->
+              </div> 
+              
+               <div class="job-wrapper clearfix">
+                <div class="experience-title">ARTIFICIAL INTELLIGENCE ENGINEER</div> <!-- JOB TITLE  -->
+                <div class="company-description">
+                  <p>BIGDATA - Ai - Python</p>   <!-- JOB DESCRIPTION  -->
+                </div>
+              </div>
+              
+            </div><!--Skill experience-->
+            
+            <div class="section-wrapper clearfix">
+              <h3 class="section-title">Skills</h3>  <!-- YOUR SET OF SKILLS  -->
+                <ul>
+                  <li class="skill-percentage">Artifical Intelligence (AI)</li>
+                  <li class="skill-percentage">Python</li>
+                  <li class="skill-percentage">BigData</li>
+                  <li class="skill-percentage"> Angular</li>
+                  <li class="skill-percentage">C/C++</li>
+                  <li class="skill-percentage">Git</li>
+                  
+                </ul>
+              
+            </div>
+            
+            
+            
+          </div>
+        </section>
+        
+        <div class="clearfix"></div>
+      </div>
+      
+</body>
+</html>
